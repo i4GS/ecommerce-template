@@ -1,11 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TNTCO | RFJAM DANANG TEE - DropPoint - The streetwear marketplace for Malaysia’s boldest brands</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <section class="notice">
+        <div class="notice-container">
+            <p>Welcome to DropPoint Online Store</p>
+            <p>Free shipping for orders over RM150.</p>
+            <p>10% off your first order! Code: WELCOME10</p>
+        </div>
+    </section>
+
+    <nav class="nav">
+        <div class="logo">
+            <h1>DropPoint.</h1>
+        </div>
+        <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+        <ul class="nav-main-menu">
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link"><span>Category</span> <i class="fa fa-chevron-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">T-Shirt</a></li>
+                    <li><a href="#">Bottoms</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="nav-link"><span>Collection</span> <i class="fa fa-chevron-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">New Arrival</a></li>
+                    <li><a href="#">Hari Raya Sale</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="nav-link"><span>About</span> <i class="fa fa-chevron-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">About Us</a></li>
+                    <li class="sub-dropdown">
+                        <a href="#" class="dropdown-link"><span>Contact</span> <i class="fa fa-chevron-right"></i></a>
+                        <ul class="sub-dropdown-content">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Redbook</a></li>
+                            <li><a href="#">Send a Message</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Latest News</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="action">
+            <div class="btn">
+                <a href="/" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="/" class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="/login"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="product-detail-section">
+        <div class="product-detail-container">
+            <div class="image-gallery">
+                <div class="main-image" id="mainImage">
+                    <img src="../images/clothes1-front.png" alt="Product Image" class="zoom" id="displayedImage">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="../images/clothes1-front.png" class="thumbnail" onclick="switchImage(this)">
+                    <img src="../images/clothes1-back.png" class="thumbnail" onclick="switchImage(this)">
+                    <img src="../images/clothes1-front-zoom.jpg" class="thumbnail" onclick="switchImage(this)">
+                    <img src="../images/clothes1-back-zoom.jpg" class="thumbnail" onclick="switchImage(this)">
+                </div>
+            </div>
+
+            <div class="product-info-detail">
+                <h1 class="product-name">TNTCO | RFJAM DANANG TEE</h1>
+                <p class="product-price">RM 189.00</p>
+
+                <div class="product-sizes">
+                    <label>Select Size</label>
+                    <div class="size-options">
+                        <button class="size-btn">S</button>
+                        <button class="size-btn">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                    </div>
+                </div>
+
+                <div class="product-remarks">
+                    <label for="remarks">Remarks</label>
+                    <textarea id="remarks" rows="3" placeholder="Add any specific notes..."></textarea>
+                </div>
+
+                <div class="product-actions">
+                    <a href="/add-to-cart" class="addcart-button">Add to Cart</a>
+                    <a href="/buy-now" class="buy-button">Buy Now</a>
+                </div>
+
+                <div class="payment-icons">
+                    <img src="../images/visa.png" alt="Visa">
+                    <img src="../images/master-card.png" alt="MasterCard">
+                    <img src="../images/fpx.png" alt="PayPal">
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="showTab('details')">Details</button>
+            <button class="tab-btn" onclick="showTab('reviews')">Reviews</button>
+        </div>
+
+        <div class="tab-content" id="detailsTab">
+            <p>Product made from 100% organic cotton. Breathable, durable and stylish for any season.</p>
+        </div>
+
+        <div class="tab-content" id="reviewsTab" style="display: none;">
+            <p>⭐️⭐️⭐️⭐️⭐️ - "Super comfortable and fits perfectly!"</p>
+            <p>⭐️⭐️⭐️⭐️ - "Good material, a bit tight at the shoulders."</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col logo-col">
+                <div class="logo">
+                    <h1>DropPoint.</h1>
+                </div>
+                <p>The Customer is at the heart of our unique business model, which include design.</p>
+                <div class="payment-icons">
+                    <img src="../images/visa.png" alt="Visa Card">
+                    <img src="../images/master-card.png" alt="Master Card">
+                    <img src="../images/fpx.png" alt="FPX">
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Shopping</h4>
+                <ul>
+                    <li><a href="#">T-Shirt</a></li>
+                    <li><a href="#">Bottoms</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Hari Raya Sale</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Redbook</a></li>
+                    <li><a href="mailto:support@dropoint.com.my">support@dropoint.com.my</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h4>Newsletter</h4>
+                <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fas fa-envelope"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2025 DropPoint. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
+
 </html>
