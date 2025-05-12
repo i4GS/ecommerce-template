@@ -196,7 +196,6 @@ ul {
 }
 
 .btn {
-    display: flex;
     gap: 30px;
 }
 
@@ -283,7 +282,7 @@ ul {
 }
 
 .product-sizes label,
-.product-remarks label {
+.product-quantity label {
     display: block;
     margin-bottom: 10px;
     font-size: 1rem;
@@ -330,7 +329,7 @@ ul {
     margin-bottom: 20px;
 }
 
-.addcart-button {
+.cart-btn {
     background-color: var(--text-primary);
     border: 1px solid var(--text-primary);
     color: var(--bg-primary);
@@ -340,12 +339,12 @@ ul {
     transition: background 0.3s;
 }
 
-.addcart-button:hover {
+.cart-btn:hover {
     background-color: transparent;
     color: var(--text-primary);
 }
 
-.buy-button {
+.buy-btn {
     background-color: transparent;
     border: 1px solid var(--text-primary);
     color: var(--text-primary);
@@ -355,9 +354,51 @@ ul {
     transition: background 0.3s;
 }
 
-.buy-button:hover {
+.buy-btn:hover {
     background-color: var(--text-primary);
     color: var(--bg-primary);
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.qty-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.qty-btn:hover {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+}
+
+#quantityInput {
+    width: 100px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--text-primary);
+    font-size: 1rem;
+    appearance: textfield;
+}
+
+#quantityInput::-webkit-outer-spin-button,
+#quantityInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .tab-container {

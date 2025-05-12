@@ -26,7 +26,7 @@
         </div>
         <button class="menu-toggle"><i class="fa fa-bars"></i></button>
         <ul class="nav-main-menu">
-            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="../" class="nav-link">Home</a></li>
             <li class="dropdown">
                 <a href="#" class="nav-link"><span>Category</span> <i class="fa fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
@@ -96,14 +96,18 @@
                     </div>
                 </div>
 
-                <div class="product-remarks">
-                    <label for="remarks">Remarks</label>
-                    <textarea id="remarks" rows="3" placeholder="Add any specific notes..."></textarea>
+                <div class="product-quantity">
+                    <label>Quantity</label>
+                    <div class="quantity-control">
+                        <button class="qty-btn" onclick="changeQuantity(-1)">−</button>
+                        <input type="number" id="quantityInput" value="1" min="1">
+                        <button class="qty-btn" onclick="changeQuantity(1)">+</button>
+                    </div>
                 </div>
 
                 <div class="product-actions">
-                    <a href="/add-to-cart" class="addcart-button">Add to Cart</a>
-                    <a href="/buy-now" class="buy-button">Buy Now</a>
+                    <a href="/add-to-cart" class="addcart-btn">Add to Cart</a>
+                    <a href="/buy-now" class="buy-btn">Buy Now</a>
                 </div>
 
                 <div class="payment-icons">
@@ -111,21 +115,21 @@
                     <img src="../images/master-card.png" alt="MasterCard">
                     <img src="../images/fpx.png" alt="PayPal">
                 </div>
+
+                <div class="tab-container">
+                    <button class="tab-btn active" onclick="showTab('details')">Details</button>
+                    <button class="tab-btn" onclick="showTab('reviews')">Reviews</button>
+                </div>
+
+                <div class="tab-content" id="detailsTab">
+                    <p>Product made from 100% organic cotton. Breathable, durable and stylish for any season.</p>
+                </div>
+
+                <div class="tab-content" id="reviewsTab" style="display: none;">
+                    <p>⭐️⭐️⭐️⭐️⭐️ - "Super comfortable and fits perfectly!"</p>
+                    <p>⭐️⭐️⭐️⭐️ - "Good material, a bit tight at the shoulders."</p>
+                </div>
             </div>
-        </div>
-
-        <div class="tab-container">
-            <button class="tab-btn active" onclick="showTab('details')">Details</button>
-            <button class="tab-btn" onclick="showTab('reviews')">Reviews</button>
-        </div>
-
-        <div class="tab-content" id="detailsTab">
-            <p>Product made from 100% organic cotton. Breathable, durable and stylish for any season.</p>
-        </div>
-
-        <div class="tab-content" id="reviewsTab" style="display: none;">
-            <p>⭐️⭐️⭐️⭐️⭐️ - "Super comfortable and fits perfectly!"</p>
-            <p>⭐️⭐️⭐️⭐️ - "Good material, a bit tight at the shoulders."</p>
         </div>
     </section>
 
