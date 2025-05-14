@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TNTCO | RFJAM DANANG TEE - DropPoint - The streetwear marketplace for Malaysia’s boldest brands</title>
+    <title>Login - DropPoint - The streetwear marketplace for Malaysia’s boldest brands</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -26,11 +26,11 @@
         </div>
         <button class="menu-toggle"><i class="fa fa-bars"></i></button>
         <ul class="nav-main-menu">
-            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="../" class="nav-link">Home</a></li>
             <li class="dropdown">
                 <a href="#" class="nav-link"><span>Category</span> <i class="fa fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
-                    <li><a href="#">T-Shirt</a></li>
+                    <li><a href="../shop/">T-Shirt</a></li>
                     <li><a href="#">Bottoms</a></li>
                     <li><a href="#">Accessories</a></li>
                 </ul>
@@ -52,7 +52,6 @@
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">Instagram</a></li>
                             <li><a href="#">Redbook</a></li>
-                            <li><a href="#">Send a Message</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Latest News</a></li>
@@ -68,7 +67,28 @@
         </div>
     </nav>
 
-    
+    <section class="login-section">
+        <div class="login-container">
+            <h2>Login</h2>
+
+            <form class="login-form">
+                <div class="input-group">
+                    <label for="email">Email Address <span>*</span></label>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password <span>*</span></label>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+
+                <button type="submit" class="login-btn">Log in</button>
+            </form>
+
+            <p class="divider">or</p>
+
+            <a href="/register" class="create-account-btn">Create Account</a>
+        </div>
+    </section>
     
     <footer class="site-footer">
         <div class="footer-container">

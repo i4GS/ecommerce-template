@@ -212,7 +212,102 @@ ul {
     color: var(--accent-primary);
 }
 
+.login-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
 
+.login-container {
+    padding: 40px 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+    margin-bottom: 50px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 18px 18px;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.input-group span {
+    color: red;
+}
+
+.input-group input:focus {
+    border-color: var(--accent-primary);
+    outline: none;
+}
+
+.login-btn {
+    border: 1px solid var(--text-primary);
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    padding: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.login-btn:hover {
+    color: var(--text-primary);
+    background-color: transparent;
+    border: 1px solid var(--text-primary);
+}
+
+.divider {
+    margin: 20px 0;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.create-account-btn {
+    display: inline-block;
+    color: var(--accent-primary);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.create-account-btn:hover {
+    color: var(--accent-secondary);
+}
 
 .site-footer {
     background-color: var(--bg-primary);
@@ -293,8 +388,9 @@ ul {
     border: none;
     outline: none;
     color: #fff;
-    font-size: 0.95rem;
+    font-size: 1rem;
     padding: 8px 0;
+    font-family: 'Ubuntu', sans-serif;
 }
   
 .newsletter-form button {
