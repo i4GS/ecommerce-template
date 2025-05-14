@@ -347,7 +347,7 @@ ul {
 
 .new-arrivals {
     padding: 60px 5%;
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     color: #000;
     text-align: center;
 }
