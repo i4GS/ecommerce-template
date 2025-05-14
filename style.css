@@ -425,7 +425,7 @@ ul {
 .product-name {
     text-align: left;
     font-weight: 600;
-    max-width: 300px;
+    max-width: 180px;
     text-transform: uppercase;
 }
 
