@@ -41,4 +41,18 @@ document.addEventListener('DOMContentLoaded', () => {
         closeCart.addEventListener('click', () => toggleCart(false));
         cartOverlay?.addEventListener('click', () => toggleCart(false));
     }
+
+    const searchToggle = document.getElementById("searchToggle");
+    const searchBar = document.getElementById("searchBar");
+
+    searchToggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        searchBar.classList.toggle("show");
+    });
+
+    document.addEventListener("click", (e) => {
+        if (!searchBar.contains(e.target) && !searchToggle.contains(e.target)) {
+            searchBar.classList.remove("show");
+        }
+    });
 });
