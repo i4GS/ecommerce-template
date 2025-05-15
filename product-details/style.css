@@ -29,10 +29,6 @@ a {
     font-weight: 500;
 }
 
-.nav ul {
-    list-style-type: none;
-}
-
 .notice {
     display: flex;
     overflow: hidden;
@@ -86,14 +82,16 @@ a {
 
 .nav {
     display: flex;
-    position: relative;
-    z-index: 1000;
     justify-content: space-between;
     align-items: center;
     padding-inline: 3vw;
     height: 70px;
     background: var(--bg-color);
     color: var(--text-primary);
+}
+
+.nav ul {
+    list-style-type: none;
 }
 
 .logo h1 a {
@@ -198,6 +196,7 @@ a {
 }
 
 .btn {
+    display: flex;
     gap: 30px;
 }
 
@@ -333,7 +332,7 @@ a {
     margin-bottom: 20px;
 }
 
-.cart-btn {
+.add-cart-btn {
     background-color: var(--text-primary);
     border: 1px solid var(--text-primary);
     color: var(--bg-primary);
@@ -343,7 +342,7 @@ a {
     transition: background 0.3s;
 }
 
-.cart-btn:hover {
+.add-cart-btn:hover {
     background-color: transparent;
     color: var(--text-primary);
 }
