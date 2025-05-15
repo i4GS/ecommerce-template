@@ -96,7 +96,7 @@ a {
     color: var(--text-primary);
 }
 
-.logo h1 {
+.logo h1 a {
     font-weight: 600;
 }
 
@@ -710,6 +710,10 @@ a {
         text-align: center;
         align-items: center;
         gap: 0px;
+    }
+
+    .payment-icons {
+        justify-content: center;
     }
     
     .newsletter-form {
