@@ -217,6 +217,130 @@ ul {
     color: var(--accent-primary);
 }
 
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-sidebar.open {
+    right: 0;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cart-header h2 {
+    font-size: 1.2rem;
+}
+
+.close-cart {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cart-items {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.cart-item img {
+    width: 150px;
+    border-right: 1px solid var(--text-secondary);
+    height: auto;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+
+.item-details {
+    margin-left: 10px;
+}
+
+.item-details .name {
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.item-details .size {
+    margin: 10px 0;
+    display: inline-block;
+    background-color: var(--accent-primary);
+    color: var(--bg-secondary);
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.item-details .price {
+    font-size: 0.9rem;
+    color: var(--text-secondary, #888);
+}
+
+.cart-footer {
+    padding: 1rem;
+}
+
+.cart-footer .cta-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    border-radius: 6px;
+}
+
+.cart-footer .cta-button:hover {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--text-primary);
+}
+
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.cart-overlay.active {
+    display: block;
+}
+
 .hero {
     display: flex;
     justify-content: center;
