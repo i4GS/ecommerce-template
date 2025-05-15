@@ -44,14 +44,16 @@ ul {
 }
 
 .notice-container {
-    display: flex;
-    width: max-content;
-    animation: slideText 10s ease-in-out infinite;
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 200%;
+    animation: slideText 20s linear infinite;
 }
 
 .notice p {
-    margin-right: 60px;
-    white-space: nowrap;
+    display: inline;
+    margin: 0;
+    padding-right: 60px;
     font-size: 1rem;
     opacity: 0.8;
 }
@@ -60,17 +62,8 @@ ul {
     0% {
         transform: translateX(0);
     }
-    25% {
-        transform: translateX(-9%);
-    }
-    50% {
-        transform: translateX(0);
-    }
-    75% {
-        transform: translateX(15%);
-    }
     100% {
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
 }
 
