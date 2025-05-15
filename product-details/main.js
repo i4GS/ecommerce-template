@@ -18,3 +18,12 @@ function showTab(tab) {
     document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');
 }
+
+const toggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-main-menu');
+
+
+toggle.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+    document.body.classList.toggle('menu-open');
+});
