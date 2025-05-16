@@ -9,6 +9,7 @@
 :root {
     --bg-primary: #121212;
     --bg-secondary: #1e1e1e;
+    --bg-products: #ffffff;
     --text-primary: #E0E0E0;
     --text-secondary: #B0B0B0;
     --accent-primary: #B39CD0;
@@ -348,6 +349,9 @@ ul {
     padding: 1rem 0;
     font-size: 1.1rem;
     border-radius: 6px;
+    background-color: var(--bg-products);
+    color: var(--bg-primary);
+    transition: background 0.3s;
 }
 
 .cart-footer .cta-button:hover {

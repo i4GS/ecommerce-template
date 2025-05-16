@@ -353,6 +353,9 @@ a {
     padding: 1rem 0;
     font-size: 1.1rem;
     border-radius: 6px;
+    background-color: var(--bg-products);
+    color: var(--bg-primary);
+    transition: background 0.3s;
 }
 
 .cart-footer .cta-button:hover {
