@@ -81,6 +81,8 @@ a {
     height: 70px;
     background: var(--bg-color);
     color: var(--text-primary);
+    position: relative;
+    z-index: 10000;
 }
 
 .nav ul {
